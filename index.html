@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprendendo JavaScript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Container principal para centralizar e limitar o conteúdo -->
+        <div class="container">
+                <h1> Aprendendo JavaScript</h1>
+
+                <Section class="calculator">
+                    <h2>Calculadora Simples</h2>
+                    <input type="number" id="num1" placeholder="Primeiro número">
+                    <input type="number" id="num2" placeholder="Segundo número">
+                    <div class="buttons">
+                        <button onclick="calculate('+')" class="operation">Somar</button>
+                        <button onclick="calculate('-')" class="operation">Subtrair</button>
+                        <button onclick="calculate('*')" class="operation">Multiplicar</button>
+                        <button onclick="calculate('/')" class="operation">Dividir</button>
+                    </div>
+                    <p id="result">Resultado: </p>
+                </Section>
+
+            <!-- Seção para manipulação de texto-->
+            <section class="text tools">
+                <h2>Manipulação de Texto</h2>
+                <!-- Input para digitar texto-->
+                <input type="text" id="textInput" placeholder="Digite um texto">
+                <!-- Botões para transformar o texto e contar seus caracteres -->
+                <div class="buttons">
+                    <button onclick="transformText('upper')">Maiúsculas</button>
+                    <button onclick="transformText('lower')">Minpusculas</button>
+                    <button onclick="countChars()">Contar caracteres</button>
+                </div>
+                <p id="textResult">Resultado: </p>
+            </section>
+
+            <!-- Seção para mudança de cores-->
+            <section class="color-changer">
+                <h2> Mudança de cores</h2>
+                <!-- Caixa que muda de cor ao ser clicada-->
+                <div class="color-box" id="colorBox">
+                    <p>Clique aqui para mudar a cor!</p>
+                </div>
+            </section>
+        </div>
+
+          <!-- Chamando o javascript para o html-->
+        <script src="main.js"></script>
+    </body>
+</html>
